@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A tiny Flask application ready for PaaS deployment.">
+    <title>Hello from Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <main class="card">
+      <div class="badge"><span></span> Flask is running</div>
+      <p class="eyebrow">Hello, world!</p>
+      <h1>Your Python app is live.</h1>
+      <p class="intro">
+        This page is rendered by Flask and served by Gunicorn, ready for your
+        PaaS test.
+      </p>
+      <div class="details">
+        <div>
+          <strong>Framework</strong>
+          <span>Flask</span>
+        </div>
+        <div>
+          <strong>Health check</strong>
+          <a href="/health">/health</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
